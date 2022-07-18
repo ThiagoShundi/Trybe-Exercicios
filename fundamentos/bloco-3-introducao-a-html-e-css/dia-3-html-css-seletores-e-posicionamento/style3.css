@@ -1,0 +1,16 @@
+h1, p:focus {
+    text-align: center;
+}
+
+ul:hover , ol:hover {
+    background-color: lightblue;
+}
+
+ul:active , ol:active {
+    font-family: sans-serif, Helvetica;
+    font-size: 20px;
+}
+
+li {
+    list-style: circle;
+}
