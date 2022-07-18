@@ -35,11 +35,11 @@ color: blue;
 background-color:pink;
 }
 
-#aliados li a:hover {
+#aliados li :hover {
 font-weight: 700;
 }
 
-#aliados li a:nth-of-type(1) {
+#aliados li :nth-of-type(1) {
     color: orange;
   }
   
@@ -52,7 +52,7 @@ font-weight: 700;
   }
   
   #aliados li a[href*="devdocs"] {
-    color: yellow;
+    color: lightblue;
   }
   
   #aliados li a[href*="trybe"] {
