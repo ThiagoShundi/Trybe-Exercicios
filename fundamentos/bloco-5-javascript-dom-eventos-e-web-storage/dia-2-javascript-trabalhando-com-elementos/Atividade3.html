@@ -23,5 +23,14 @@
 
     const pai = document.getElementsbyId('pai');
     
-
+    for (let index = 0; index < pai.childNodes.length; index += 1) {
+      const currentChildren = pai.childNodes[index];
+      if (currentChildren !== 'elementoOndeVoceEsta'){
+        currentChildren.remove();
+      }
+    }
+    
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+    
   </script>
