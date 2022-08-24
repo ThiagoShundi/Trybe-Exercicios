@@ -62,13 +62,10 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-  
-  function nameAndAge() {
+
+  function fantasyOrScienceFiction() {
     // escreva seu código aqui
-    return books.map((book) => ({
-        age: book.releaseYear - book.author.birthYear,
-        author: book.author.name,
-    })).sort((ElementA, ElementB) => ElementA.age - ElementB.age);
+    return books.filter((book) => book.genre === "Fantasia" || book.genre === "Ficção Científica");
   }
 
-  console.log(nameAndAge())
+  console.log(fantasyOrScienceFiction());

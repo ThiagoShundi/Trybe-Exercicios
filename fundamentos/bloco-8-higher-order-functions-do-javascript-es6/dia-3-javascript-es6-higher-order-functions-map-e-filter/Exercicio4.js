@@ -62,13 +62,12 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-  
-  function nameAndAge() {
+
+  function oldBooksOrdered() {
     // escreva seu código aqui
-    return books.map((book) => ({
-        age: book.releaseYear - book.author.birthYear,
-        author: book.author.name,
-    })).sort((ElementA, ElementB) => ElementA.age - ElementB.age);
+    const currentYear = new Date().getFullYear();
+    return books.filter((book) => ((currentYear - book.releaseYear) > 60)).sort((ElementA, ElementB) => ElementA.releaseYear - ElementB.releaseYear);
+
   }
 
-  console.log(nameAndAge())
+  console.log(oldBooksOrdered());
